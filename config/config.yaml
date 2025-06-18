@@ -11,3 +11,20 @@ database:
   supabase:
     table: "documents"
     query_function: "match_documents"
+
+llm:
+  temperature: 0
+
+query:
+  default: "why is agentic rag better than naive rag?"
+
+prompt:
+  - type: system
+    content: "You are a helpful AI assistant."
+  - type: placeholder
+    variable_name: chat_history
+    optional: true
+  - type: human
+    content: "{input}"
+  - type: placeholder
+    variable_name: agent_scratchpad
