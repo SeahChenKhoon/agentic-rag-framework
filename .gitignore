@@ -1,0 +1,3 @@
+# Credentials and environment variables
+.env
+src/utils/__pycache__/

@@ -1,0 +1,13 @@
+paths:
+  documents: "./documents"
+
+embedding:
+  model: "text-embedding-3-small"
+  chunk:
+    size: 1000
+    overlap: 100
+
+database:
+  supabase:
+    table: "documents"
+    query_function: "match_documents"
