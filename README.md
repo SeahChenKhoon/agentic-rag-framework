@@ -103,7 +103,13 @@ cp example.env .env
 - Open a terminal in VS Code
 - Execute the following command:
 
-  - python ingest_in_db.py
+  - PYTHONPATH=. python .//src//embed_documents_to_supabase.py
+
+  ![Executing the scripts](./images/09_Executing%20the%20scripts.jpg)
+
   - PYTHONPATH=. streamlit run ./src/agentic_rag_streamlit_app.py
+
+  ![Run streamlit](./images/10_Executing_Streamlit.jpg)
+  ![Run streamlit](./images/11_Running_Streamlit.jpg)
 
 
